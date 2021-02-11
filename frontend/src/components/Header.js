@@ -15,7 +15,7 @@ const Header = () => {
 	const logoutHandler = () => {
 		dispatch(logout());
 	};
-
+	// className='nav-bar-bg'
 	return (
 		<header style={{ zIndex: '5', position: 'sticky', top: '0' }}>
 			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
@@ -28,7 +28,7 @@ const Header = () => {
 						<Route render={({ history }) => <SearchBox history={history} />} />
 						<Nav className='ml-auto'>
 							<LinkContainer to='/cart'>
-								<Nav.Link>
+								<Nav.Link style={{ fontSize: '3rem' }}>
 									<i className='fas fa-shopping-cart'></i> Cart
 								</Nav.Link>
 							</LinkContainer>

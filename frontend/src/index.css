@@ -45,10 +45,17 @@ h2 {
 	margin: 0 auto;
 }
 
-.text-centered {
+.text-centered-landing {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-weight: 900 !important;
+	font-size: 50px;
+	line-height: 1.07143;
+	font-weight: 900;
+	letter-spacing: -0.005em;
+}
+
+.nav-bar-bg {
+	background-color: #b38f6f;
 }
