@@ -17,7 +17,6 @@ const SearchBox = ({ history }) => {
 		<Form className='mr-5' onSubmit={submitHandler} inline>
 			<InputGroup>
 				<FormControl
-					variant='outlined'
 					placeholder='Search'
 					type='text'
 					name='q'
@@ -25,8 +24,8 @@ const SearchBox = ({ history }) => {
 					style={{ width: '20rem' }}
 				/>
 				<InputGroup.Append>
-					<Button type='submit' style={{ padding: '0.5rem', background: '#000' }}>
-						<i className='fa fa-search'></i>
+					<Button type='submit' style={{ padding: '0.4rem', background: '#888' }}>
+						<i className='fa fa-search px-3'></i>
 					</Button>
 				</InputGroup.Append>
 			</InputGroup>
