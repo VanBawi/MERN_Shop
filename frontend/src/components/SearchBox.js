@@ -21,11 +21,13 @@ const SearchBox = ({ history }) => {
 					type='text'
 					name='q'
 					onChange={(e) => setKeyword(e.target.value)}
-					style={{ width: '20rem' }}
+					style={{ width: '20rem', borderRadius: '17px 0px 0px 17px' }}
 				/>
 				<InputGroup.Append>
-					<Button type='submit' style={{ padding: '0.4rem', background: '#888' }}>
-						<i className='fa fa-search px-3'></i>
+					<Button
+						type='submit'
+						style={{ padding: '0.3rem', background: '#888', borderRadius: '0px 17px 17px 0' }}>
+						<i className='fa fa-search px-2'></i>
 					</Button>
 				</InputGroup.Append>
 			</InputGroup>

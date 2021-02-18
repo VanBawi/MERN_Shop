@@ -1,20 +1,19 @@
 import React from 'react';
-import MacPro from '../images/wallpaperMacpro.jpeg';
+import MacPro from '../images/macbook-pro-bg.jpg';
 
 const LandingImage = () => {
 	return (
-		<div>
+		<div style={{ marginTop: '-2rem' }}>
 			<img
-				style={{ width: '100%', maxHeight: '95vh', marginTop: '-2rem', objectFit: 'cover' }}
+				style={{ width: '100%', minHeight: '95vh', objectFit: 'cover' }}
 				src={MacPro}
-				alt='macpro'
+				alt='mac pro'
 			/>
 			<div>
-				<h2 className='text-centered-landing text-white'>
-					Welcome to the future <br />
-					TEch world. <br />
-					<h2 className='text-white'>Things to explore.</h2>
-				</h2>
+				<h1 className='text-centered-landing text-white '>
+					Welcome to the future Tech world. <br />
+					<h2 className='text-white py-5'>Things to explore.</h2>
+				</h1>
 			</div>
 		</div>
 	);

@@ -21,8 +21,6 @@ const HomeScreen = ({ match }) => {
 	const productList = useSelector((state) => state.productList);
 	const { loading, error, products, page, pages } = productList;
 
-	console.log('products', products);
-
 	useEffect(() => {
 		dispatch(listProducts(keyword, pageNumber));
 	}, [dispatch, keyword, pageNumber]);
@@ -37,16 +35,16 @@ const HomeScreen = ({ match }) => {
 					Go Back
 				</Link>
 			)}
-			<h1>Latest Products</h1>
+			<h1 className='text-center py-5'>Featured Products</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (
 				<Message variant='danger'>{error}</Message>
 			) : (
 				<>
-					<Row>
+					<Row className='mx-5'>
 						{products.map((product) => (
-							<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+							<Col key={product._id}>
 								<Product product={product} />
 							</Col>
 						))}
